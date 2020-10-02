@@ -1,0 +1,148 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<title>Bootstrap</title> 
+<meta charset="utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css"> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+</head> 
+<style>
+  .navbar-brand{
+    font-size: 25px;
+  }
+      .p{
+        font-size: 20px;
+      }
+      .jumbotron .btn-primary{
+        background-color:#576ce4;
+            }
+      #demo{
+          padding:1% 2%;
+      }
+      #demo .btn-primary{
+        background-color:#4587fa;
+      }
+      .my-4{
+        text-align: center;
+
+      }
+      .btn{
+        background-color: #818cf0;
+        text-align: center;
+      }
+
+       #navlist a:hover { 
+        background-color: rgb(179, 170, 170); 
+        color: rgb(243, 200, 200); 
+    } 
+
+    /* styling search bar */ 
+    .search input[type=text]{ 
+        width:250px; 
+        height:35px; 
+        border-radius:25px; 
+        border: none; 
+        margin-left: 250px;
+    } 
+
+    .search{ 
+        float:right; 
+        margin:7px; 
+        font-size: 20px;
+    } 
+
+    .search button{ 
+        background-color: #0074D9; 
+        color: #f2f2f2; 
+        float: right; 
+        height: 35px;
+        text-align: center;
+        padding: 5px 10px;  
+        font-size: 15px; 
+        border: none; 
+        cursor: pointer; 
+        border-radius:25px; 
+    }  
+</style>
+<body> 
+
+<nav class="navbar navbar-inverse" style="background-color: #df6e6e;"> 
+<div class="container-fluid"> 
+  <div class="navbar-header"> 
+
+  <a class="navbar-brand" href="#"style="color: black;">CSL3403</a> 
+  </div> 
+  <ul class="nav navbar-nav"> 
+  <li class="active"><a href="#">Home</a></li> 
+  <li class="dropdown"> 
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"style="color: white;"> 
+            Languages<span class="caret"></span></a> 
+        <ul class="dropdown-menu"> 
+           <li><a href="#">English</a></li> 
+           <li><a href="#">Hindi</a></li> 
+           <li><a href="#">Spanish</a></li> 
+           <li><a href="#">French</a></li> 
+       </ul> 
+    </li> 
+  <li><a href="#" style="color: rgb(255, 255, 255);">Contact</a></li> 
+          <div class="search"> 
+            <form action="#"> 
+                <input type="text"
+                    placeholder=" Search"
+                    name="search"> 
+                <button> <i class="fa fa-search" aria-hidden="true">Search</i>
+
+                </button> 
+            </form> 
+        </div> 
+  </ul> 
+  <ul class="nav navbar-nav navbar-right"> 
+    <li><a href="#"style="color: white;">Support</a></li> 
+  <li><a href="#"style="color: white;">Help</a></li> 
+  <li><a href=" https://dreamvivek1.github.io/webpage1/"style="color: white;"><span class="glyphicon glyphicon-user"style="color: white;"></span>FLEX</a></li> 
+  <li><a href="#"style="color: white;"><span class="glyphicon glyphicon-log-in"style="color: white;"></span> Login</a></li> 
+  </ul> 
+</div> 
+</nav> 
+
+<section id="jumbo">
+   <div class="jumbotron"><br>
+    <br>
+    <h1 class="display-4" style="font-size: 50px; margin-left: 30px;">Hello, This is Vivek </h1>
+    <p class="lead" style="margin: 20px;margin-right: 30px;margin-left: 30px;">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information. It uses utility classes for typography and spacing to space content out within the larger container.</p><br><br>
+    <hr class="my-4">
+    <p style="margin-left: 50px;">For more information, click below.</p>
+    <a class="btn btn-primary btn-lg" href="https://getbootstrap.com/" role="button" style="text-align: center;margin-left: 50px;background-color: #1b53ec;">Learn more</a>
+  </div>
+ </section>
+ <section id=demo>
+   <button type="button" class="btn btn-primary btn-block" data-toggle="modal" data-target="#exampleModal" style="background-color: #165eee;text-align: center;font-size: 20px; width: 250px; ">
+     Launch demo modal
+   </button>
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel"><h2>Welcome</h2></h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <h3>This is a Demo</h3>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal" style="background-color: rgb(238, 101, 238);">Close</button>
+        <button type="button" class="btn btn-primary">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+ </section>
+  </div>
+ </section>
+
+</body> 
+</html> 
